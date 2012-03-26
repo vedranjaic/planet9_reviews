@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Planet9 - Recenzije</title>
+	
+	<!--[if IE]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" charset="utf-8">
+	
+	<!-- jQUERY -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" charset="utf-8"></script>
+	
+</head><!-- end HEAD -->
+
+<body>
+	<div class="wrap">
+		
+		<!-- HEADER -->
+		<div id="header">
+			<div id="logo_menu">
+				<div id="logo">
+					<a href="index.html">Planet9 - Recenzije</a>
+				</div><!-- /logo -->
+				<div id="main_menu">
+					<ul>
+						<li><a href="index.html" class="reviews">Recenzije</a></li>
+						<li><a href="awards.html" class="awards">Nagrade</a></li>
+						<li><a href="add_new.html" class="addnew current">Dodaj</a></li>
+					</ul>
+				</div><!-- /main_menu -->
+			</div><!-- /logo_menu -->
+
+			<div class="top_bar">
+				<div id="top_bar_info">
+					<!-- ako account nije aktiviran -->
+					<p class="not_active"><a href="profile.html">Aktiviraj svoj račun</a>, <a href="add_new.html">piši recenzije</a> i osvoji <a href="awards.html">vrijedne nagrade</a>!</p>
+					<!-- ako je account aktiviran -->
+					<!-- <p><a href="add_new.html">Piši recenzije</a> i osvoji <a href="awards.html">vrijedne nagrade</a>!</p> -->
+				</div><!-- /top_bar_info -->
+				<div id="top_bar_username">
+					<ul>
+						<li><p>Pozdrav, <a href="profile.html" class="fbuser">Vedran</a>!</p></li>
+						<li><p><a href="profile.html" class="fbuser">Moj profil</a></p></li>
+					</ul>
+				</div><!-- /top_bar_username -->
+			</div><!-- /.top_bar -->
+		</div><!-- /header -->
+		
+		<div id="search_bar">
+			<input type="text" name="search" value="Pretraži knjige iz Planeta9..." id="search">
+			<span class="preload"><img src="images/preload.gif" /></span>
+		</div><!-- /search_bar -->
+		
+		<!-- REVIEWS -->
+		<div class="reviews">
+			<div class="review">
+				<div class="review_top">
+					<div class="review_top_left">
+						<!-- book image -->
+						<img src="http://www.lorempixum.com/84/110/abstract/" width="84" />
+						<div class="review_book">
+							<div class="review_book_title_rating">
+								<div class="review_book_title">
+									<h1>Naslov knjige koji je malo duži</h1>
+									<h3>Autor: <span>Ime Prezime</span></h3>
+								</div><!-- /.review_book_title -->
+								<div class="review_book_rating">
+									<div class="star_rating">
+										<p>&star;&star;&star;&star; <span>4/5</span></p>
+									</div><!-- /.star_rating -->
+									<h3>Broj recenzija: <span>9</span></h3>
+								</div><!-- /.review_book_rating -->
+							</div><!-- /.review_book_title_rating -->
+							<div class="review_book_review">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</p>
+							</div><!-- /.review_book_review -->
+						</div><!-- /.review_book -->
+					</div><!-- /.review_top_left -->
+					<div class="review_top_right">
+						<ul>
+							<li><a href="#" class="viewReview"><span class="closed"></span>Vidi recenzije</a></li>
+							<li><a href="#" class="addReview"><span class="open"></span>Dodaj novu recenziju</a></li>
+						</ul>
+					</div><!-- /.review_top_right -->
+				</div><!-- /.review_top -->
+					
+				<!-- ADD NEW REViEW -->
+				<div class="review_add_new">
+					<h2 class="bookTitle">Naslov knjige koji je malo duži <span>19.04.2012.</span></h2>
+					<div class="review_ur_user">
+						<img src="http://www.lorempixum.com/50/50/people/" width="50" />
+						<h2>Imenica Prezimenica</h2>
+						<div class="star_rating_my">
+							&star;&star;&star;&star;
+						</div><!-- /.star_rating_my -->
+						<span>4/5</span>
+					</div><!-- /.review_ur_user -->
+						
+					<div class="review_ur_addreview">
+						<form action="#" method="post" accept-charset="utf-8">
+							<textarea>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+							<p><input type="submit" id="submitReview" value="Pošalji"></p>
+						</form>
+					</div><!-- /.review_ur_addreview -->
+				</div><!-- /.review_user_review -->
+
+			</div><!-- /.review -->
+		</div><!-- /.reviews -->
+		
+		<!-- FOOTER -->
+		<div class="footer">
+			<p>&copy; 2012. Hrvatski Telekom - Sva prava pridržana</p>
+		</div><!-- /.footer -->
+	</div><!-- /.wrap -->
+</body><!-- end BODY -->
+
+</html>

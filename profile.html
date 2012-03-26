@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Planet9 - Recenzije</title>
+	
+	<!--[if IE]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" charset="utf-8">
+	
+	<!-- jQUERY -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" charset="utf-8"></script>
+	
+</head><!-- end HEAD -->
+
+<body>
+	<div class="wrap">
+		
+		<!-- HEADER -->
+		<div id="header">
+			<div id="logo_menu">
+				<div id="logo">
+					<a href="index.html">Planet9 - Recenzije</a>
+				</div><!-- /logo -->
+				<div id="main_menu">
+					<ul>
+						<li><a href="index.html" class="reviews">Recenzije</a></li>
+						<li><a href="awards.html" class="awards">Nagrade</a></li>
+						<li><a href="add_new.html" class="addnew">Dodaj</a></li>
+					</ul>
+				</div><!-- /main_menu -->
+			</div><!-- /logo_menu -->
+
+			<div class="top_bar">
+				<div id="top_bar_info">
+					<!-- ako account nije aktiviran -->
+					<p class="not_active"><a href="profile.html">Aktiviraj svoj račun</a>, <a href="add_new.html">piši recenzije</a> i osvoji <a href="awards.html">vrijedne nagrade</a>!</p>
+					<!-- ako je account aktiviran -->
+					<!-- <p><a href="add_new.html">Piši recenzije</a> i osvoji <a href="awards.html">vrijedne nagrade</a>!</p> -->
+				</div><!-- /top_bar_info -->
+				<div id="top_bar_username">
+					<ul>
+						<li><p>Pozdrav, <a href="profile.html" class="fbuser">Vedran</a>!</p></li>
+						<li><p><a href="profile.html" class="fbuser">Moj profil</a></p></li>
+					</ul>
+				</div><!-- /top_bar_username -->
+			</div><!-- /.top_bar -->
+		</div><!-- /header -->
+		
+		<!-- PROFiLE -->
+		<div class="myprofile">
+			<div class="myprofileL">
+				<img src="images/locked.png" />
+			</div><!-- /.myprofileL -->
+			<div class="myprofileR">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+				<div class="myprofile_data">
+					<img src="http://www.lorempixum.com/50/50/people/" width="50" />
+					<form action="#" method="post" accept-charset="utf-8">
+						<table width="408">
+							<tr>
+								<td colspan="3">Ime i prezime:</td>
+							</tr>
+							<tr>
+								<td colspan="3"><input type="text" name="user_name" value="Ime Prezime" id="user_name"></td>
+							</tr>
+							<tr>
+								<td colspan="3">Adresa:</td>
+							</tr>
+							<tr>
+								<td colspan="3"><input type="text" name="user_address" value="" id="user_address"></td>
+							</tr>
+							<tr>
+								<td>Poštanski broj:</td>
+								<td>&nbsp;</td>
+								<td>Grad:</td>
+							</tr>
+							<tr>
+								<td><input type="text" name="user_postal" value="" id="user_postal"></td>
+								<td width="20">&nbsp;</td>
+								<td><input type="text" name="user_city" value="" id="user_city"></td>
+							</tr>
+						</table>
+						<p><input type="submit" value="Aktiviraj" id="profile_activate"></p>
+					</form>
+				</div><!-- /.myprofile_data -->
+			</div><!-- /.myprofileR -->
+		</div><!-- /.myprofile -->
+		
+		<!-- FOOTER -->
+		<div class="footer">
+			<p>&copy; 2012. Hrvatski Telekom - Sva prava pridržana</p>
+		</div><!-- /.footer -->
+	</div><!-- /.wrap -->
+</body><!-- end BODY -->
+
+</html>

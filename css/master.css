@@ -1,0 +1,140 @@
+/*/// RESET */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, font, img, ul, li{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;list-style:none;}
+/* HTML5 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+body {line-height:1; font-family:Helvetica, Arial, sans-serif; font-size:62.5%; color:#fff; font-weight:normal;}
+.clear {clear:both}
+:focus {outline:0;}
+/*/// RESET */
+
+/*/// BODY / DEFAULTS */
+.wrap {background:url() top left no-repeat; width:790px; padding:20px 10px; margin:0 auto; background:url(../images/main_bg.png) top left repeat-x #848484;}
+a {color:#fff; text-decoration:none;}
+a:hover {text-decoration:underline;}
+p {font-size:1.1em; line-height:1.4em;}
+
+/*/// HEADER */
+#header {margin-bottom:40px;}
+#logo_menu {overflow:hidden; height:1%; padding:0 20px;}
+/* logo */
+#logo {float:left;}
+#logo a {background:url(../images/logo.png) top left no-repeat; width:302px; height:34px; display:block; text-indent:-9999em; overflow:hidden;}
+/* menu */
+#main_menu {float:right; overflow:hidden; display:inline-block;}
+#main_menu ul {overflow:hidden;}
+#main_menu ul li {float:left; margin-left:5px;}
+#main_menu ul li a {font-size:1.7em; display:block;}
+#main_menu ul li a.reviews {background:url(../images/main_menu.png) 0 -40px no-repeat; width:114px; height:40px; text-indent:-9999em; overflow:hidden;}
+#main_menu ul li a.reviews:hover, #main_menu ul li a.reviews.current {background-position:0 0;}
+#main_menu ul li a.awards {background:url(../images/main_menu.png) 0 -120px no-repeat; width:114px; height:40px; text-indent:-9999em; overflow:hidden;}
+#main_menu ul li a.awards:hover, #main_menu ul li a.awards.current {background-position:0 -80px;}
+#main_menu ul li a.addnew {background:url(../images/main_menu.png) 0 -200px no-repeat; width:114px; height:40px; text-indent:-9999em; overflow:hidden;}
+#main_menu ul li a.addnew:hover, #main_menu ul li a.addnew.current {background-position:0 -160px;}
+/* top_bar */
+.top_bar {overflow:hidden; height:37px; display:block; background-color:#e00982; line-height:1.4em; position:relative; padding:0 20px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px;}
+#top_bar_info {float:left; display:inline-block; width:50%; position:absolute; top:50%; margin-top:-7px;}
+#top_bar_info a, #top_bar_username ul li a {font-weight:bold;}
+#top_bar_info p.not_active {background:url(../images/warning.png) no-repeat; padding-left:20px; height:21px;}
+#top_bar_username {float:right; display:inline-block; width:50%}
+#top_bar_username ul {float:right; position:absolute; top:50%; margin-top:-8px; right:20px; overflow:hidden;}
+#top_bar_username ul li {float:left; margin-left:10px;}
+
+/*/// REVIEWS */
+.review, .awards_container, .myprofile {background-color:#eaeaea; padding:20px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; color:#7d7d7d;}
+.review_top {overflow:hidden;}
+.review_top_left {float:left; width:539px; border-right:1px solid #dddddd; padding-right:20px;}
+.review_top_left img {float:left; margin-right:20px;}
+.review_top_left .review_book_title_rating {overflow:hidden;}
+.review_top_left .review_book_title {float:left;}
+.review_top_left .review_book_title h1 {font-size:2em; color:#e00982; line-height:1.2em; max-width:300px; display:inline-block;}
+.review_top_left .review_book_title h3 {font-size:1.2em; color:#e00982; padding-top:7px;}
+.review_top_left .review_book_rating {float:right;}
+.review_top_left .review_book_review p {font-size:1.2em; padding-top:10px;}
+.review_top_right {float:right;}
+.review_top_right ul {margin-top:10px;}
+.review_top_right ul li {margin-bottom:20px;}
+.review_top_right ul li a {font-size:1.2em; display:inline-block; width:120px; padding:10px 10px 9px 38px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; position:relative;}
+.review_top_right ul li a span.closed {background:url(../images/icons.png) 0 -84px no-repeat; height:21px; width:20px; display:inline-block; position:absolute; left:12px;top:5px;}
+.review_top_right ul li a span.open {background:url(../images/icons.png) 0 -105px no-repeat; height:21px; width:20px; display:inline-block; position:absolute; left:12px;top:5px;}
+.review_top_right ul li a.viewReview {background-color:#e00982;}
+.review_top_right ul li a.viewReview:hover {background-color:#ba076c; text-decoration:none;}
+.review_top_right ul li a.addReview {background-color:#272727;}
+.review_top_right ul li a.addReview:hover {background-color:#e00982; text-decoration:none;}
+/* user reviews */
+.review_user_reviews {margin-top:40px;}
+.review_user_reviews h1 {font-size:2em; line-height:1em; margin-bottom:20px;}
+h2.bookTitle {text-transform:uppercase; color:#bbb; line-height:1.6em; border-bottom:1px solid #ddd; padding-bottom:7px; margin-bottom:12px; display:inline-block; width:100%;}
+h2.bookTitle span{float:right; background:url(../images/clock.png) center left no-repeat; padding-left:12px;}
+.review_user_review {overflow:hidden; background-color:#ffffff; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; padding:10px; box-shadow:1px 1px 1px 0 #bbb; -moz-box-shadow:1px 1px 1px 0 #bbb; -webkit-box-shadow:1px 1px 1px 0 #bbb; -o-box-shadow:1px 1px 1px 0 #bbb; margin-bottom:10px;}
+.review_ur_user {float:left; width:260px; margin-top:8px;}
+.review_ur_user img {float:left; margin-right:10px;}
+.review_ur_user h2 {font-size:1.4em; line-height:1.3em;}
+.review_ur_user .share {display:block; margin-top:40px;}
+h2.shareTitle {text-transform:uppercase; font-size:1em; color:#bbb; line-height:1.6em; border-bottom:1px solid #ddd; padding-bottom:7px; margin-bottom:12px; display:inline-block; width:200px;}
+.review_user_review .review_ur_review {float:right; max-width:470px; margin-top:8px;}
+.review_user_review .review_ur_review p {font-family:Georgia, Times, serif; font-size:1.4em; line-height:1.6em; font-style:italic; padding:0 10px 20px 0;}
+/* add new review */
+.review_add_new {overflow:hidden; margin-top:40px; background-color:#ffffff; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; padding:10px;  box-shadow:1px 1px 1px 0 #bbb; -moz-box-shadow:1px 1px 1px 0 #bbb; -webkit-box-shadow:1px 1px 1px 0 #bbb; -o-box-shadow:1px 1px 1px 0 #bbb; margin-bottom:3px;}
+.review_add_new .review_ur_addreview {float:left; display:inline-block; width:430px; background-color:#ffffff; border-radius:0 10px 10px 10px; padding:10px 0;}
+.review_add_new .review_ur_addreview textarea {width:430px; height:130px; padding:20px; font-family:Georgia, Times, serif; font-size:1.4em; line-height:1.4em; color:#7d7d7d; border-color:#dedede; margin-bottom:10px;}
+.review_add_new .review_ur_addreview input#submitReview {background-color:#e00982; font-family:Georgia, Times, serif; font-size:1.2em; color:#fff; padding:7px 20px; border:0; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; float:right;}
+.review_add_new .review_ur_addreview input#submitReview:hover {background-color:#ba076c; cursor:pointer;}
+
+/*/// AWARDS */
+.awards_container {overflow:hidden;}
+.awards_container p {font-size:1.2em;}
+.awardsL {float:left; width:365px; overflow:hidden;}
+.awardsR {float:right; width:365px}
+.award_ereader {overflow:hidden; margin-top:40px;}
+.award_ereader img {float:left; margin-right:20px;}
+.award_ereader h4 {color:#e00982; font-size:1.4em;}
+.award_ereader ul {margin:20px 0 0 30px; display:block;}
+.award_ereader ul li {margin-bottom:5px; list-style:disc;}
+.award_bon {margin-top:40px; text-align:center;}
+
+/*/// PROFiLE */
+.myprofile {overflow:hidden;}
+.myprofile p {font-size:1.2em;}
+.myprofileL {float:left; width:180px; overflow:hidden;}
+.myprofileR {float:right; width:550px}
+.myprofile_data {overflow:hidden; margin-top:40px; background-color:#fff; padding:20px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; color:#7d7d7d;}
+.myprofile_data img {float:left; margin-right:30px; border:5px solid #eee;}
+.myprofile_data table {font-size:1.2em; margin-bottom:10px;}
+.myprofile_data table input {padding:7px; border:1px solid #ddd; font-size:1.2em; color:#666;}
+.myprofile_data table input:focus {border:1px solid #e00982;}
+.myprofile_data table input#user_name, .myprofile_data table input#user_address {width:100%;}
+.myprofile_data table input#user_postal, .myprofile_data table input#user_city {width:100%;}
+.myprofile_data input#profile_activate {background-color:#e00982; font-family:Georgia, Times, serif; font-size:1.2em; color:#fff; padding:7px 20px; border:0; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; float:right;}
+.myprofile_data input#profile_activate:hover {background-color:#ba076c; cursor:pointer;}
+
+/*/// SEARCH */
+#search_bar {margin-bottom:40px; background-color:#e00982; padding:10px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; box-shadow:inset -1px 1px 1px #fff; -webkit-box-shadow:inset -1px 1px 1px #fff; -moz-box-shadow:inset -1px 1px 1px #fff; -o-box-shadow:inset -1px 1px 1px #fff; position:relative;}
+#search_bar input#search {width:710px; padding:8px 30px; background:url(../images/search.png) 8px 5px no-repeat #fdd7ed; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; border:0; box-shadow:inset 0 0 3px #000; -webkit-box-shadow:inset 0 0 3px #000; -moz-box-shadow:inset 0 0 3px #000; -o-box-shadow:inset 0 0 3px #000; color:#595959;}
+#search_bar span.preload {position:absolute; top:18px; right:20px;}
+
+/*/// FOOTER */
+.footer {margin-top:40px; background-color:#e00982; padding:10px 20px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* open / close */
+/*.review_user_reviews, .review_add_new {display:none;}
+*/
