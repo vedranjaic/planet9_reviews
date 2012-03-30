@@ -32,34 +32,50 @@ p {font-size:1.1em; line-height:1.4em;}
 #main_menu ul li a.addnew:hover, #main_menu ul li a.addnew.current {background-position:0 -160px;}
 /* top_bar */
 .top_bar {overflow:hidden; height:37px; display:block; background-color:#e00982; line-height:1.4em; position:relative; padding:0 20px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px;}
-#top_bar_info {float:left; display:inline-block; width:50%; position:absolute; top:50%; margin-top:-7px;}
+#top_bar_info {float:left; display:inline-block; width:70%; position:absolute; top:50%; margin-top:-7px;}
 #top_bar_info a, #top_bar_username ul li a {font-weight:bold;}
-#top_bar_info p.not_active {background:url(../images/warning.png) no-repeat; padding-left:20px; height:21px;}
-#top_bar_username {float:right; display:inline-block; width:50%}
+#top_bar_info p.not_active {background:url(../images/warning.png) 0 0 no-repeat; padding-left:20px; height:21px; display:inline-block;}
+#top_bar_info p.not_active.noviewopt {background-position:top left;}
+#top_bar_info p.active {padding-left:0; display:inline-block;}
+#top_bar_info ul {float:left; display:inline-block; margin-right:17px; margin-top:-2px;}
+#top_bar_info ul li {float:left; margin-right:1px;}
+#top_bar_info ul li a {width:25px; height:19px; text-indent:-9999em; overflow:hidden; display:block; background-image:url(../images/list.png); background-repeat:no-repeat;}
+#top_bar_info ul li a.view_detail {background-position:top left;}
+#top_bar_info ul li a.view_detail:hover, #top_bar_info ul li a.view_detail.view_current {background-position:top right;}
+#top_bar_info ul li a.view_list {background-position:bottom left;}
+#top_bar_info ul li a.view_list:hover, #top_bar_info ul li a.view_list.view_current {background-position:bottom right;}
+#top_bar_username {float:right; display:inline-block; width:30%}
 #top_bar_username ul {float:right; position:absolute; top:50%; margin-top:-8px; right:20px; overflow:hidden;}
 #top_bar_username ul li {float:left; margin-left:10px;}
 
-/*/// REVIEWS */
+/*/// REVIEWS DETAiLED */
+.review {margin-bottom:10px;}
 .review, .awards_container, .myprofile {background-color:#eaeaea; padding:20px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; color:#7d7d7d;}
 .review_top {overflow:hidden;}
 .review_top_left {float:left; width:539px; border-right:1px solid #dddddd; padding-right:20px;}
 .review_top_left img {float:left; margin-right:20px;}
 .review_top_left .review_book_title_rating {overflow:hidden;}
 .review_top_left .review_book_title {float:left;}
-.review_top_left .review_book_title h1 {font-size:2em; color:#e00982; line-height:1.2em; max-width:300px; display:inline-block;}
-.review_top_left .review_book_title h3 {font-size:1.2em; color:#e00982; padding-top:7px;}
+.review_top_left .review_book_title h1 {font-size:2em; color:#7d7d7d; line-height:1.2em; max-width:300px; display:inline-block;}
+.review_top_left .review_book_title h3 {font-size:1.2em; color:#7d7d7d; padding-top:7px;}
 .review_top_left .review_book_rating {float:right;}
 .review_top_left .review_book_review p {font-size:1.2em; padding-top:10px;}
 .review_top_right {float:right;}
 .review_top_right ul {margin-top:10px;}
 .review_top_right ul li {margin-bottom:20px;}
 .review_top_right ul li a {font-size:1.2em; display:inline-block; width:120px; padding:10px 10px 9px 38px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; position:relative;}
-.review_top_right ul li a span.closed {background:url(../images/icons.png) 0 -84px no-repeat; height:21px; width:20px; display:inline-block; position:absolute; left:12px;top:5px;}
-.review_top_right ul li a span.open {background:url(../images/icons.png) 0 -105px no-repeat; height:21px; width:20px; display:inline-block; position:absolute; left:12px;top:5px;}
-.review_top_right ul li a.viewReview {background-color:#e00982;}
-.review_top_right ul li a.viewReview:hover {background-color:#ba076c; text-decoration:none;}
-.review_top_right ul li a.addReview {background-color:#272727;}
-.review_top_right ul li a.addReview:hover {background-color:#e00982; text-decoration:none;}
+.review_top_right ul li a span.iconView {background:url(../images/icons.png) 0 -84px no-repeat; height:21px; width:20px; display:inline-block; position:absolute; left:12px;top:5px;}
+.review_top_right ul li a span.iconAdd {background:url(../images/icons.png) 0 -105px no-repeat; height:21px; width:20px; display:inline-block; position:absolute; left:12px;top:5px;}
+.review_top_right ul li a.viewReview {background-color:#272727;}
+.review_top_right ul li a.viewReview:hover {background-color:#e00982; text-decoration:none;}
+.review_top_right ul li a.addReview {background-color:#e00982;}
+.review_top_right ul li a.addReview:hover {background-color:#ba076c; text-decoration:none;}
+/*/// REVIEWS LiST */
+.review.list .review_top_left img, .review.list .review_top_left .review_book_review p {display:none;}
+.review.list .review_top_right ul {overflow:hidden; width:140px; margin-top:7px;}
+.review.list .review_top_right ul li {float:left; width:50%; margin-bottom:0;}
+.review.list .review_top_right ul li a {text-indent:-9999em; width:0;}
+
 /* user reviews */
 .review_user_reviews {margin-top:40px;}
 .review_user_reviews h1 {font-size:2em; line-height:1em; margin-bottom:20px;}
@@ -75,8 +91,8 @@ h2.shareTitle {text-transform:uppercase; font-size:1em; color:#bbb; line-height:
 .review_user_review .review_ur_review p {font-family:Georgia, Times, serif; font-size:1.4em; line-height:1.6em; font-style:italic; padding:0 10px 20px 0;}
 /* add new review */
 .review_add_new {overflow:hidden; margin-top:40px; background-color:#ffffff; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; padding:10px;  box-shadow:1px 1px 1px 0 #bbb; -moz-box-shadow:1px 1px 1px 0 #bbb; -webkit-box-shadow:1px 1px 1px 0 #bbb; -o-box-shadow:1px 1px 1px 0 #bbb; margin-bottom:3px;}
-.review_add_new .review_ur_addreview {float:left; display:inline-block; width:430px; background-color:#ffffff; border-radius:0 10px 10px 10px; padding:10px 0;}
-.review_add_new .review_ur_addreview textarea {width:430px; height:130px; padding:20px; font-family:Georgia, Times, serif; font-size:1.4em; line-height:1.4em; color:#7d7d7d; border-color:#dedede; margin-bottom:10px;}
+.review_add_new .review_ur_addreview {float:right; display:inline-block; width:470px; background-color:#ffffff; border-radius:0 10px 10px 10px; padding:10px 0;}
+.review_add_new .review_ur_addreview textarea {width:428px; height:130px; padding:20px; font-family:Georgia, Times, serif; font-size:1.4em; line-height:1.4em; color:#7d7d7d; border-color:#dedede; margin-bottom:10px;}
 .review_add_new .review_ur_addreview input#submitReview {background-color:#e00982; font-family:Georgia, Times, serif; font-size:1.2em; color:#fff; padding:7px 20px; border:0; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; float:right;}
 .review_add_new .review_ur_addreview input#submitReview:hover {background-color:#ba076c; cursor:pointer;}
 
@@ -94,7 +110,7 @@ h2.shareTitle {text-transform:uppercase; font-size:1em; color:#bbb; line-height:
 
 /*/// PROFiLE */
 .myprofile {overflow:hidden;}
-.myprofile p {font-size:1.2em;}
+.myprofile p {font-size:1.2em; margin-top:15px;}
 .myprofileL {float:left; width:180px; overflow:hidden;}
 .myprofileR {float:right; width:550px}
 .myprofile_data {overflow:hidden; margin-top:40px; background-color:#fff; padding:20px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; color:#7d7d7d;}
@@ -106,6 +122,8 @@ h2.shareTitle {text-transform:uppercase; font-size:1em; color:#bbb; line-height:
 .myprofile_data table input#user_postal, .myprofile_data table input#user_city {width:100%;}
 .myprofile_data input#profile_activate {background-color:#e00982; font-family:Georgia, Times, serif; font-size:1.2em; color:#fff; padding:7px 20px; border:0; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; float:right;}
 .myprofile_data input#profile_activate:hover {background-color:#ba076c; cursor:pointer;}
+/* report box */
+span.report_box {background-color:#ff0000; color:#fff; padding:10px; line-height:2.9em; margin-left:93px;}
 
 /*/// SEARCH */
 #search_bar {margin-bottom:40px; background-color:#e00982; padding:10px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; box-shadow:inset -1px 1px 1px #fff; -webkit-box-shadow:inset -1px 1px 1px #fff; -moz-box-shadow:inset -1px 1px 1px #fff; -o-box-shadow:inset -1px 1px 1px #fff; position:relative;}
@@ -136,5 +154,5 @@ h2.shareTitle {text-transform:uppercase; font-size:1em; color:#bbb; line-height:
 
 
 /* open / close */
-/*.review_user_reviews, .review_add_new {display:none;}
-*/
+.review_user_reviews, .review_add_new {display:none;}
+
